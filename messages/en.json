@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "David Santiago Andrade Santacruz",
+    "title": "Systems Engineer",
+    "subtitle": "Full Stack Developer",
+    "description": "Systems Engineer with experience as a Full Stack Developer in multiplatform web and mobile applications, with emphasis on React. I have worked with Dart, Firebase, Django, React, Next.js, TypeScript, Node.js, and Python.",
+    "cv": "View CV"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I have experience in developing sites with React and consuming public APIs. Design and management of SQL and NoSQL databases (MySQL, Firebase, MongoDB), in cloud and local environments. I have developed e-commerce projects (WooCommerce), property management systems, landing pages, and automated reports (PDF and Excel).",
+    "skills": "Technical Skills"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "current": "Current",
+    "job1": {
+      "company": "Inmobiliaria Realhaus",
+      "position": "Full Stack Developer",
+      "period": "September 2024 - September 2025",
+      "description": "Data consumption and cache management with React Query to improve performance, consistency and user experience in searches/pagination."
+    },
+    "job2": {
+      "company": "Freelance",
+      "position": "Full Stack Developer",
+      "period": "October 2023 - September 2024",
+      "description": "Web development of reports with Next JS, React and MongoDB (Team development), Web development property management for real estate REALHAUS, Modern frontend with Next.js App Router and TypeScript, Real-time database with Firebase Firestore, Multimedia management with Firebase Storage and image optimization, Complete authentication system with protection middleware, Advanced UI/UX with Tailwind CSS, dark theme and responsive design, External integrations (WhatsApp, Google Maps, Geolocation), SEO optimization and performance with Next.js Image, Scalable architecture with reusable components and custom hooks."
+    },
+    "job3": {
+      "company": "Lacteos Don Juan - Alcaldía de Ipiales",
+      "position": "Junior Developer",
+      "period": "October 2022 - October 2023",
+      "description": "Development of ecommerce with Wordpress, Plugins and wooCommerce, deployed on Hostinger."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewCode": "View Code",
+    "viewDemo": "View Demo",
+    "project1": {
+      "name": "Real Estate Management System",
+      "description": "Complete platform for property management with React Query, Firebase authentication, and advanced search with filters.",
+      "tech": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Firebase",
+        "Tailwind CSS",
+        "React Query"
+      ]
+    },
+    "project2": {
+      "name": "WooCommerce E-commerce",
+      "description": "Complete online store with WordPress, custom plugins and SEO optimization.",
+      "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
+    },
+    "project3": {
+      "name": "Automated Reporting System",
+      "description": "Automatic generation of reports in PDF and Excel with Next.js and MongoDB.",
+      "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Interested in working together? Contact me!",
+    "email": "Send Email",
+    "location": "Pasto, Nariño, Colombia"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, React and Tailwind CSS"
+  }
+}
