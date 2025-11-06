@@ -32,20 +32,20 @@ export default function Projects() {
         "React Query",
       ],
       github: "https://github.com/Santiago1927",
-      demo: "#",
+      demo: "https://www.realhaus.com.co/",
     },
     {
       name: t("project2.name"),
       description: t("project2.description"),
       tech: ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"],
-      demo: "#",
+      demo: "http://www.lacteosdonjuan.com/",
     },
     {
       name: t("project3.name"),
       description: t("project3.description"),
       tech: ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"],
       github: "https://github.com/Santiago1927",
-      demo: "#",
+      demo: "http://www.reportes-lacteos-don-juan.vercel.app/",
     },
   ];
 

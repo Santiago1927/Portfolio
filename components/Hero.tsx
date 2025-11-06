@@ -94,7 +94,7 @@ export default function Hero() {
                 <Github className="w-6 h-6" />
               </a>
               <a
-                href="https://www.linkedin.com/in/david-santiago-andrade-santacruz-60aa60208/"
+                href="https://www.linkedin.com/in/santiagoa1927/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg bg-surface-light dark:bg-surface-dark hover:bg-accent-light dark:hover:bg-accent-dark hover:text-white transition-all duration-300 hover:scale-110"

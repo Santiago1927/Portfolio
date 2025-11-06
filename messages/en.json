@@ -57,7 +57,7 @@
       ]
     },
     "project2": {
-      "name": "WooCommerce E-commerce",
+      "name": "E-commerce Lacteos Don Juan",
       "description": "Complete online store with WordPress, custom plugins and SEO optimization.",
       "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
     },
