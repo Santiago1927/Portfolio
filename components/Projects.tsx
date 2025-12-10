@@ -14,6 +14,15 @@ interface Project {
   demo?: string;
 }
 
+/**
+ * Componente Projects profesional (Proyectos Destacados)
+ * Muestra los proyectos más importantes del portfolio
+ * Características mejoradas:
+ * - Tarjetas con glassmorphism
+ * - Efectos de hover sofisticados
+ * - Tags de tecnologías mejorados
+ * - Animaciones escalonadas
+ */
 export default function Projects() {
   const t = useTranslations("projects");
   const ref = useRef(null);
@@ -50,51 +59,74 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" ref={ref} className="py-20 px-4">
+    <section id="projects" ref={ref} className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-light dark:text-primary-dark mb-12">
-            {t("title")}
-          </h2>
+          {/* Título de la sección */}
+          <div className="text-center mb-16">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl sm:text-5xl font-display font-bold text-primary-light dark:text-primary-dark mb-4"
+            >
+              {t("title")}
+            </motion.h2>
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
+              transition={{ delay: 0.2 }}
+              className="w-24 h-1 bg-gradient-to-r from-accent-500 to-purple-500 mx-auto rounded-full"
+            ></motion.div>
+          </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Grid de proyectos */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={
-                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
                 }
-                transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                className="group relative bg-surface-light dark:bg-surface-dark rounded-lg p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-accent-light dark:hover:border-accent-dark"
+                transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-accent-500/50 dark:hover:border-accent-400/50 hover:shadow-2xl hover:shadow-accent-500/10 transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="space-y-4">
-                  <div className="flex items-start justify-between">
-                    <h3 className="text-xl font-bold text-primary-light dark:text-primary-dark group-hover:text-accent-light dark:group-hover:text-accent-dark transition-colors">
+                {/* Gradiente de fondo sutil */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+                <div className="relative space-y-4">
+                  {/* Header */}
+                  <div className="flex items-start justify-between gap-4">
+                    {/* Nombre del proyecto */}
+                    <h3 className="text-xl font-display font-bold text-primary-light dark:text-primary-dark group-hover:text-accent-500 dark:group-hover:text-accent-400 transition-colors flex-1">
                       {project.name}
                     </h3>
-                    <div className="flex space-x-2">
+
+                    {/* Enlaces */}
+                    <div className="flex space-x-2 flex-shrink-0">
                       {project.github && (
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors"
+                          className="p-2 rounded-lg bg-surface-light dark:bg-surface-dark hover:bg-accent-500/10 dark:hover:bg-accent-400/10 text-secondary-light dark:text-secondary-dark hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 hover:scale-110"
                           aria-label={t("viewCode")}
                         >
                           <Github className="w-5 h-5" />
                         </a>
                       )}
+
                       {project.demo && (
                         <a
                           href={project.demo}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-secondary-light dark:text-secondary-dark hover:text-accent-light dark:hover:text-accent-dark transition-colors"
+                          className="p-2 rounded-lg bg-surface-light dark:bg-surface-dark hover:bg-accent-500/10 dark:hover:bg-accent-400/10 text-secondary-light dark:text-secondary-dark hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 hover:scale-110"
                           aria-label={t("viewDemo")}
                         >
                           <ExternalLink className="w-5 h-5" />
@@ -103,23 +135,23 @@ export default function Projects() {
                     </div>
                   </div>
 
+                  {/* Descripción */}
                   <p className="text-secondary-light dark:text-secondary-dark text-sm leading-relaxed">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2">
+                  {/* Tags de tecnologías */}
+                  <div className="flex flex-wrap gap-2 pt-2">
                     {project.tech.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 text-xs font-medium bg-background-light dark:bg-background-dark text-accent-light dark:text-accent-dark rounded-full"
+                        className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-accent-500/10 to-purple-500/10 text-accent-600 dark:text-accent-400 rounded-full border border-accent-500/20 dark:border-accent-400/20"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
-
-                <div className="absolute inset-0 bg-gradient-to-r from-accent-light to-blue-600 dark:from-accent-dark dark:to-blue-400 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300 pointer-events-none"></div>
               </motion.div>
             ))}
           </div>

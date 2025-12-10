@@ -4,79 +4,140 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiNodedotjs,
+  SiPython,
+  SiDjango,
+  SiDart,
+  SiFirebase,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiTailwindcss,
+  SiGit,
+  SiDocker,
+  SiWoocommerce,
+} from "react-icons/si";
 
+/**
+ * Componente About profesional (Acerca de mí)
+ * Sección que presenta información personal y profesional del desarrollador
+ * Características mejoradas:
+ * - Iconos de tecnologías con colores oficiales
+ * - Animaciones de hover en skill cards
+ * - Mejor jerarquía visual
+ * - Layout optimizado
+ */
 export default function About() {
   const t = useTranslations("about");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  // Array de tecnologías con iconos y colores oficiales
   const skills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
-    "Node.js",
-    "Python",
-    "Django",
-    "Dart",
-    "Firebase",
-    "MongoDB",
-    "MySQL",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Git",
-    "Docker",
-    "WooCommerce",
+    { name: "React", icon: SiReact, color: "#61DAFB" },
+    { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
+    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+    { name: "Python", icon: SiPython, color: "#3776AB" },
+    { name: "Django", icon: SiDjango, color: "#092E20" },
+    { name: "Dart", icon: SiDart, color: "#0175C2" },
+    { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+    { name: "Git", icon: SiGit, color: "#F05032" },
+    { name: "Docker", icon: SiDocker, color: "#2496ED" },
+    { name: "WooCommerce", icon: SiWoocommerce, color: "#96588A" },
   ];
 
   return (
-    <section id="about" ref={ref} className="py-20 px-4">
+    <section id="about" ref={ref} className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary-light dark:text-primary-dark mb-8">
-            {t("title")}
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-12">
+          {/* Título de la sección */}
+          <div className="text-center mb-12">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl sm:text-5xl font-display font-bold text-primary-light dark:text-primary-dark mb-4"
+            >
+              {t("title")}
+            </motion.h2>
             <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="space-y-4"
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
+              transition={{ delay: 0.2 }}
+              className="w-24 h-1 bg-gradient-to-r from-accent-500 to-purple-500 mx-auto rounded-full"
+            ></motion.div>
+          </div>
+
+          {/* Grid con dos columnas */}
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            {/* Columna izquierda: Descripción */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="space-y-6"
             >
               <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed">
                 {t("description")}
               </p>
             </motion.div>
 
+            {/* Columna derecha: Habilidades técnicas */}
             <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
+              initial={{ opacity: 0, x: 30 }}
+              animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h3 className="text-xl font-semibold text-primary-light dark:text-primary-dark mb-4">
+              <h3 className="text-2xl font-display font-semibold text-primary-light dark:text-primary-dark mb-6">
                 {t("skills")}
               </h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {skills.map((skill, index) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    animate={
-                      isInView
-                        ? { opacity: 1, scale: 1 }
-                        : { opacity: 0, scale: 0.8 }
-                    }
-                    transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
-                    className="px-4 py-2 bg-surface-light dark:bg-surface-dark rounded-lg text-center text-sm font-medium text-primary-light dark:text-primary-dark hover:bg-accent-light dark:hover:bg-accent-dark hover:text-white transition-all duration-300 cursor-default hover:scale-105"
-                  >
-                    {skill}
-                  </motion.div>
-                ))}
+
+              {/* Grid de badges de habilidades con iconos */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                {skills.map((skill, index) => {
+                  const Icon = skill.icon;
+                  return (
+                    <motion.div
+                      key={skill.name}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={
+                        isInView
+                          ? { opacity: 1, scale: 1 }
+                          : { opacity: 0, scale: 0.8 }
+                      }
+                      transition={{ duration: 0.3, delay: 0.5 + index * 0.05 }}
+                      className="group relative px-4 py-3 bg-white dark:bg-gray-800 rounded-xl border border-gray-200/50 dark:border-gray-700/50 hover:border-accent-500/50 dark:hover:border-accent-400/50 transition-all duration-300 cursor-default hover:scale-105 hover:shadow-lg hover:shadow-accent-500/10"
+                    >
+                      <div className="flex items-center space-x-3">
+                        <Icon
+                          className="w-6 h-6 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-12"
+                          style={{ color: skill.color }}
+                        />
+                        <span className="text-sm font-medium text-primary-light dark:text-primary-dark">
+                          {skill.name}
+                        </span>
+                      </div>
+
+                      {/* Efecto de gradiente sutil al hover */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 to-purple-500/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </motion.div>
+                  );
+                })}
               </div>
             </motion.div>
           </div>

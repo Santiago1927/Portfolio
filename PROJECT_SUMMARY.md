@@ -36,7 +36,7 @@ He creado un portafolio profesional y moderno basado en tu perfil, inspirado en 
 
 - Nombre completo: David Santiago Andrade Santacruz
 - Título: Ingeniero de Sistemas
-- Rol: Desarrollador Full Stack
+- Rol: Desarrollador Frontend
 - Descripción profesional
 - Ubicación: Pasto, Nariño, Colombia
 - Enlaces sociales (GitHub, LinkedIn, Email)

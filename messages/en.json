@@ -10,34 +10,34 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Systems Engineer",
     "subtitle": "Full Stack Developer",
-    "description": "Systems Engineer with experience as a Full Stack Developer in multiplatform web and mobile applications, with emphasis on React. I have worked with Dart, Firebase, Django, React, Next.js, TypeScript, Node.js, and Python.",
-    "cv": "View CV"
+    "description": "Systems Engineer with over 3 years of experience in software development. Web design including gathering user requirements. I have worked on projects from scratch and integrated into teams with software in development, optimizing its architecture, performance, and maintainability. Throughout my career, I have collaborated with high-level companies and startups with the ability to meet compatibility objectives while meeting and exceeding client demands.",
+    "cv": "Download CV"
   },
   "about": {
     "title": "About Me",
-    "description": "I have experience in developing sites with React and consuming public APIs. Design and management of SQL and NoSQL databases (MySQL, Firebase, MongoDB), in cloud and local environments. I have developed e-commerce projects (WooCommerce), property management systems, landing pages, and automated reports (PDF and Excel).",
-    "skills": "Technical Skills"
+    "description": "Full Stack Developer with demonstrated experience in architecting and developing modern web applications using React and Next.js. Specialized in designing and implementing SQL and NoSQL databases (MySQL, Firebase, MongoDB) in both cloud and on-premise environments. I have led e-commerce projects, real estate management systems, corporate landing pages, and report automation solutions, always prioritizing user experience, performance, and development best practices.",
+    "skills": "Technology Stack"
   },
   "experience": {
-    "title": "Work Experience",
+    "title": "Professional Experience",
     "current": "Current",
     "job1": {
-      "company": "Inmobiliaria Realhaus",
-      "position": "Full Stack Developer",
-      "period": "September 2024 - September 2025",
-      "description": "Data consumption and cache management with React Query to improve performance, consistency and user experience in searches/pagination."
+      "company": "Lacteos Don Juan",
+      "position": "Web Developer",
+      "period": "March 2022 - November 2022",
+      "description": "Complete development of e-commerce website for dairy company using WordPress and WooCommerce. Implementation of customized product catalog, optimized shopping cart, and responsive design. Development of custom plugins including Spectra Advanced Visual Editor for page editing, secure checkout system with integrated payment methods (credit card, debit card, and other options), and advanced transaction management. Integration of Google Shopping and Google Ads to maximize visibility. Complete SEO optimization to improve search engine rankings. Implementation of security measures against spam (Akismet Anti-Spam) and data protection. Deployment and configuration on Hostinger server with performance optimization."
     },
     "job2": {
-      "company": "Freelance",
+      "company": "Freelance - Lacteos Don Juan",
       "position": "Full Stack Developer",
       "period": "October 2023 - September 2024",
-      "description": "Web development of reports with Next JS, React and MongoDB (Team development), Web development property management for real estate REALHAUS, Modern frontend with Next.js App Router and TypeScript, Real-time database with Firebase Firestore, Multimedia management with Firebase Storage and image optimization, Complete authentication system with protection middleware, Advanced UI/UX with Tailwind CSS, dark theme and responsive design, External integrations (WhatsApp, Google Maps, Geolocation), SEO optimization and performance with Next.js Image, Scalable architecture with reusable components and custom hooks."
+      "description": "Development of complete web application for procedure registration and control using full-stack architecture. Backend with RESTful API in NestJS with TypeScript, implementing JWT authentication middleware for robust security. User and role management with MongoDB (Mongoose) for granular access control. Frontend built in React, integrating Tailwind CSS for 100% responsive design and modern interface system. Development of automated reporting system: dynamic report generation in real-time with pagination and sorting, PDF export with dynamic template design and automatic generation, Excel (XLSX) export with configurable files and numeric formats. Integration of Chart.js for analytical data visualization with interactive charts. Implementation of dynamic forms with client and server-side validations, role-based permission system for load and access operations, and user management with password encryption (bcrypt) and secure storage. Dependency injection with NestJS for scalable and maintainable architecture."
     },
     "job3": {
-      "company": "Lacteos Don Juan - Alcaldía de Ipiales",
-      "position": "Junior Developer",
-      "period": "October 2022 - October 2023",
-      "description": "Development of ecommerce with Wordpress, Plugins and wooCommerce, deployed on Hostinger."
+      "company": "Inmobiliaria Realhaus",
+      "position": "Full Stack Developer",
+      "period": "February 2024 - Current",
+      "description": "Design and development of full-stack architecture for real estate management web application. Backend with REST API and business logic in NestJS with TypeScript, frontend SPA with React and Tailwind CSS. Implementation of dynamic property catalog with advanced search filters, optimized visualization, and efficient pagination. Integration of interactive map using Leaflet with geolocation for precise property location. Data consumption and cache management with React Query for optimized searches and better performance. Implementation of image and file upload and management with Firebase Storage. Advanced SEO optimization to improve search engine visibility. Configuration of efficient queries, client-side pagination with response times through efficient queries. Social media integration for lead generation and client communication. Domain acquired on Hostinger and site deployment on Vercel for high availability and performance."
     }
   },
   "projects": {
@@ -46,7 +46,7 @@
     "viewDemo": "View Demo",
     "project1": {
       "name": "Real Estate Management System",
-      "description": "Complete platform for property management with React Query, Firebase authentication, and advanced search with filters.",
+      "description": "Enterprise-grade platform for real estate property management. Features Firebase authentication, state management with React Query, advanced search with dynamic filters, and intuitive admin dashboard.",
       "tech": [
         "Next.js",
         "React",
@@ -58,18 +58,30 @@
     },
     "project2": {
       "name": "E-commerce Lacteos Don Juan",
-      "description": "Complete online store with WordPress, custom plugins and SEO optimization.",
-      "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
+      "description": "Comprehensive online store with product catalog, shopping cart, payment gateway, and administrative panel. Implementation of custom plugins and SEO optimization to improve search engine visibility.",
+      "tech": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "MySQL",
+        "Hostinger"
+      ]
     },
     "project3": {
       "name": "Automated Reporting System",
-      "description": "Automatic generation of reports in PDF and Excel with Next.js and MongoDB.",
-      "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
+      "description": "Enterprise solution for automatic report generation in multiple formats (PDF and Excel). MongoDB integration for real-time data processing and customizable exports.",
+      "tech": [
+        "Next.js",
+        "React",
+        "MongoDB",
+        "Node.js",
+        "PDF Generation"
+      ]
     }
   },
   "contact": {
-    "title": "Contact",
-    "description": "Interested in working together? Contact me!",
+    "title": "Let's Work Together",
+    "description": "Have a project in mind? I'd love to hear about your idea and how I can help bring it to life.",
     "email": "Send Email",
     "location": "Pasto, Nariño, Colombia"
   },

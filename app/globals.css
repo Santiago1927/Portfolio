@@ -1,24 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    @apply antialiased;
+  }
+
+  body {
+    @apply font-sans;
+  }
+
+  /* Enhanced selection colors */
+  ::selection {
+    @apply bg-accent-500 text-white;
+  }
+
+  ::-moz-selection {
+    @apply bg-accent-500 text-white;
+  }
 }
 
-/* Custom scrollbar */
+/* Professional scrollbar styling */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-gray-100 dark:bg-gray-800;
+  @apply bg-gray-100 dark:bg-gray-900;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-blue-500 dark:bg-blue-400 rounded-lg;
+  @apply bg-gradient-to-b from-accent-500 to-accent-700 rounded-full;
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-blue-600 dark:bg-blue-500;
+  @apply from-accent-600 to-accent-800;
 }
+
+/* Glassmorphism utility classes */
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-md border border-black/20;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 via-purple-500 to-pink-500;
+  }
+
+  .bg-gradient-mesh {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s ease infinite;
+  }
+}
+
+/* Smooth transitions for theme switching */
+* {
+  @apply transition-colors duration-200;
+}
+

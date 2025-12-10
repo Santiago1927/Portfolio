@@ -10,34 +10,34 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Ingeniero de Sistemas",
     "subtitle": "Desarrollador Full Stack",
-    "description": "Ingeniero de Sistemas con experiencia como Desarrollador Full Stack en aplicaciones web y móviles multiplataforma, con énfasis en React. He trabajado con Dart, Firebase, Django, React, Next.js, TypeScript, Node.js y Python.",
-    "cv": "Ver CV"
+    "description": "Ingeniero de Sistemas con mas de 3 años de experiencia en el area de desarrollo de software. Diseño de páginas web incluyendo la recopilación de las necesidades de los usuarios. He trabajado en proyectos desde cero y me he integrado en equipos con software en desarrollo, optimizando su arquitectura, rendimiento y mantenibilidad. A lo largo de mi carrera, he colaborado con empresas de alto nivel y startups con la capacidad para cumplir con los objetivos de compatibilidad y al mismo tiempo cumplir y superar las demandas del cliente. ",
+    "cv": "Descargar CV"
   },
   "about": {
     "title": "Acerca de mí",
-    "description": "Cuento con experiencia en desarrollo de sitios con React y consumo de APIs públicas. Diseño y gestión de bases de datos SQL y NoSQL (MySQL, Firebase, MongoDB), en entornos cloud y locales. He desarrollado proyectos de e-commerce (WooCommerce), sistemas de gestión de propiedades, landing pages y reportes automatizados (PDF y Excel).",
-    "skills": "Habilidades Técnicas"
+    "description": "Desarrollador Full Stack con experiencia comprobada en la arquitectura y desarrollo de aplicaciones web modernas utilizando React y Next.js. Especializado en el diseño e implementación de bases de datos SQL y NoSQL (MySQL, Firebase, MongoDB) tanto en entornos cloud como on-premise. He liderado proyectos de e-commerce, sistemas de gestión inmobiliaria, landing pages corporativas y soluciones de automatización de reportes, siempre priorizando la experiencia de usuario, el rendimiento y las mejores prácticas de desarrollo.",
+    "skills": "Stack Tecnológico"
   },
   "experience": {
-    "title": "Experiencia Laboral",
+    "title": "Experiencia Profesional",
     "current": "Actual",
     "job1": {
-      "company": "Inmobiliaria Realhaus",
-      "position": "Desarrollador Full Stack",
-      "period": "Septiembre 2024 - Septiembre 2025",
-      "description": "Gestión del consumo y caché de datos con React Query para mejorar rendimiento, coherencia y experiencia de usuario en búsquedas/paginación."
+      "company": "Lacteos Don Juan",
+      "position": "Desarrollador Web",
+      "period": "Marzo 2022 - Noviembre 2022",
+      "description": "Desarrollo completo de sitio web de e-commerce para empresa láctea utilizando WordPress y WooCommerce. Implementación de catálogo de productos personalizado, carrito de compras optimizado y diseño responsive. Desarrollo de plugins personalizados incluyendo Spectra Editor Visual Avanzado para edición de páginas, sistema de checkout seguro con métodos de pago integrados (tarjeta de crédito, débito y otras opciones), y gestión avanzada de transacciones. Integración de Google Shopping y Google Ads para maximizar visibilidad. Optimización SEO completa para mejorar posicionamiento en buscadores. Implementación de medidas de seguridad contra spam (Akismet Anti-Spam) y protección de datos. Despliegue y configuración en servidor Hostinger con optimización de rendimiento."
     },
     "job2": {
-      "company": "Freelance",
+      "company": "Freelance - Lacteos Don Juan",
       "position": "Desarrollador Full Stack",
       "period": "Octubre 2023 - Septiembre 2024",
-      "description": "Desarrollo web de reportes con Next JS, React y MongoDb (Desarrollo en equipo), Desarrollo web gestión de propiedades para inmobiliaria REALHAUS, Frontend moderno con Next.js App Router y TypeScript, Base de datos en tiempo real con Firebase Firestore, Gestión multimedia con Firebase Storage y optimización de imágenes, Sistema de autenticación completo con middleware de protección, UI/UX avanzado con Tailwind CSS, tema oscuro y diseño responsive, Integraciones externas (WhatsApp, Google Maps, Geolocalización), Optimización SEO y rendimiento con Next.js Image, Arquitectura escalable con componentes reutilizables y hooks personalizados."
+      "description": "Desarrollo de aplicación web completa para registro y control de procedimientos utilizando arquitectura full-stack. Backend con API RESTful en NestJS con TypeScript, implementando middleware de autenticación JWT para seguridad robusta. Gestión de usuarios y roles con MongoDB (Mongoose) para control de acceso granular. Frontend construido en React, integrando Tailwind CSS para diseño 100% responsive y sistema de interfaz moderna. Desarrollo de sistema de reportes automatizados: generación dinámica de reportes en tiempo real con paginación y ordenamiento, exportación a PDF con diseño de plantillas dinámicas y generación automática, exportación a Excel (XLSX) con archivos configurables y formatos numéricos. Integración de Chart.js para visualización analítica de datos con gráficos interactivos. Implementación de formularios dinámicos con validaciones en cliente y servidor, sistema de permisos basado en roles para operaciones de carga y acceso, y gestión de usuarios con encriptación de contraseñas (bcrypt) y almacenamiento seguro. Inyección de dependencias con NestJS para arquitectura escalable y mantenible."
     },
     "job3": {
-      "company": "Lacteos Don Juan - Alcaldía de Ipiales",
-      "position": "Desarrollador Junior",
-      "period": "Octubre 2022 - Octubre 2023",
-      "description": "Desarrollo de ecommerce con Wordpress, Plugins y wooCommerce, desplegado en Hostinger."
+      "company": "Inmobiliaria Realhaus",
+      "position": "Desarrollador Full Stack",
+      "period": "Febrero 2024 - Actual",
+      "description": "Diseño y desarrollo de arquitectura full-stack para aplicación web de gestión inmobiliaria. Backend con API REST y lógica de negocio en NestJS con TypeScript, frontend SPA con React y Tailwind CSS. Implementación de catálogo dinámico de propiedades listadas con filtros avanzados de búsqueda, visualización optimizada y paginación eficiente. Integración de mapa interactivo usando Leaflet con geolocalización para ubicación precisa de propiedades. Gestión de consumo y caché de datos con React Query para búsquedas optimizadas y mejor rendimiento. Implementación de carga y gestión de imágenes y archivos con almacenamiento en Firebase Storage. Optimización SEO avanzada para mejorar visibilidad en motores de búsqueda. Configuración de consultas eficientes, paginación en el cliente con tiempos de respuesta mediante consultas eficientes. Integración de redes sociales para generación de leads y comunicación entre clientes. Dominio adquirido en Hostinger y despliegue del sitio en Vercel para alta disponibilidad y rendimiento."
     }
   },
   "projects": {
@@ -46,7 +46,7 @@
     "viewDemo": "Ver Demo",
     "project1": {
       "name": "Sistema de Gestión Inmobiliaria",
-      "description": "Plataforma completa para gestión de propiedades con React Query, autenticación Firebase, y búsqueda avanzada con filtros.",
+      "description": "Plataforma empresarial completa para administración de propiedades inmobiliarias. Incluye sistema de autenticación Firebase, gestión de estado con React Query, búsqueda avanzada con filtros dinámicos, y panel de administración intuitivo.",
       "tech": [
         "Next.js",
         "React",
@@ -58,23 +58,35 @@
     },
     "project2": {
       "name": "E-commerce Lacteos Don Juan",
-      "description": "Tienda online completa con WordPress, plugins personalizados y optimización SEO.",
-      "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
+      "description": "Tienda online integral con catálogo de productos, carrito de compras, pasarela de pagos y panel administrativo. Implementación de plugins personalizados y optimización SEO para mejorar visibilidad en motores de búsqueda.",
+      "tech": [
+        "WordPress",
+        "WooCommerce",
+        "PHP",
+        "MySQL",
+        "Hostinger"
+      ]
     },
     "project3": {
       "name": "Sistema de Reportes Automatizados",
-      "description": "Generación automática de reportes en PDF y Excel con Next.js y MongoDB.",
-      "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
+      "description": "Solución empresarial para generación automática de reportes en múltiples formatos (PDF y Excel). Integración con MongoDB para procesamiento de datos en tiempo real y exportación personalizable.",
+      "tech": [
+        "Next.js",
+        "React",
+        "MongoDB",
+        "Node.js",
+        "PDF Generation"
+      ]
     }
   },
   "contact": {
-    "title": "Contacto",
-    "description": "¿Interesado en trabajar juntos? ¡Contáctame!",
-    "email": "Enviar Email",
+    "title": "Trabajemos Juntos",
+    "description": "¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea y cómo puedo ayudarte a hacerla realidad.",
+    "email": "Enviar Correo",
     "location": "Pasto, Nariño, Colombia"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
-    "builtWith": "Construido con Next.js, React y Tailwind CSS"
+    "builtWith": "Desarrollado con Next.js, React y Tailwind CSS"
   }
 }
