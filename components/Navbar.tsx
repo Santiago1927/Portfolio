@@ -48,7 +48,6 @@ export default function Navbar() {
     { name: t("about"), href: "#about" },
     { name: t("experience"), href: "#experience" },
     { name: t("projects"), href: "#projects" },
-    { name: t("blog"), href: `/${currentLocale}/blog`, external: true },
     { name: t("contact"), href: "#contact" },
   ];
 

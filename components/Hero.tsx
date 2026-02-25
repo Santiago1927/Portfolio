@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, MapPin, Phone, Download } from "lucide-react";
+import Image from "next/image";
 
 /**
  * Componente Hero profesional (Sección principal de presentación)
@@ -89,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-2xl"
+              className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-2xl text-justify"
             >
               {t("description")}
             </motion.p>
@@ -218,12 +219,13 @@ export default function Hero() {
 
               {/* Avatar principal */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl shadow-accent-500/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent-500 via-purple-500 to-pink-500 animate-gradient"></div>
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <span className="text-8xl sm:text-9xl font-display font-bold text-white drop-shadow-lg">
-                    DS
-                  </span>
-                </div>
+                <Image
+                  src="/profile.jpg"
+                  alt="David Santiago Andrade Santacruz"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
               </div>
 
               {/* Decoración flotante */}

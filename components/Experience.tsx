@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, ExternalLink } from "lucide-react";
 
 /**
  * Componente Experience profesional (Experiencia Laboral)
@@ -23,6 +23,7 @@ export default function Experience() {
   const jobs = [
     {
       company: t("job1.company"),
+      url: "http://www.lacteosdonjuan.com/",
       position: t("job1.position"),
       period: t("job1.period"),
       description: t("job1.description"),
@@ -33,6 +34,7 @@ export default function Experience() {
     },
     {
       company: t("job2.company"),
+      url: "",
       position: t("job2.position"),
       period: t("job2.period"),
       description: t("job2.description"),
@@ -43,6 +45,7 @@ export default function Experience() {
     },
     {
       company: t("job3.company"),
+      url: "https://www.realhaus.com.co/",
       position: t("job3.position"),
       period: t("job3.period"),
       description: t("job3.description"),
@@ -113,6 +116,17 @@ export default function Experience() {
                       <div className="flex items-center space-x-2 text-accent-600 dark:text-accent-400 font-medium">
                         <Briefcase className="w-5 h-5" />
                         <span>{job.company}</span>
+                        {job.url && (
+                          <a
+                            href={job.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center hover:text-accent-400 dark:hover:text-accent-300 transition-colors"
+                            title={job.url}
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                          </a>
+                        )}
                       </div>
                     </div>
 
@@ -124,7 +138,7 @@ export default function Experience() {
                   </div>
 
                   {/* Descripción */}
-                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed mb-6">
+                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed mb-6 text-justify">
                     {job.description}
                   </p>
 

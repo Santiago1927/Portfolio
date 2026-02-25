@@ -179,7 +179,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
           <p className="text-xl sm:text-2xl text-accent-500 dark:text-accent-400 font-medium mb-6">
             {data.tagline}
           </p>
-          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-3xl">
+          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-3xl text-justify">
             {data.description}
           </p>
 
@@ -263,7 +263,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
           <h2 className="text-3xl font-display font-bold text-primary-light dark:text-primary-dark mb-4">
             {t("problemTitle")}
           </h2>
-          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed">
+          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed text-justify">
             {data.problem}
           </p>
         </motion.section>
@@ -278,7 +278,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
           <h2 className="text-3xl font-display font-bold text-primary-light dark:text-primary-dark mb-4">
             {t("solutionTitle")}
           </h2>
-          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed mb-6">
+          <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed mb-6 text-justify">
             {data.solution}
           </p>
 

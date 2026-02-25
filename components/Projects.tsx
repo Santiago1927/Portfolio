@@ -150,7 +150,7 @@ export default function Projects() {
                   </div>
 
                   {/* Descripción */}
-                  <p className="text-secondary-light dark:text-secondary-dark text-sm leading-relaxed">
+                  <p className="text-secondary-light dark:text-secondary-dark text-sm leading-relaxed text-justify">
                     {project.description}
                   </p>
 

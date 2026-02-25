@@ -3,7 +3,6 @@
     "about": "Acerca de",
     "experience": "Experiencia",
     "projects": "Proyectos",
-    "blog": "Blog",
     "contact": "Contacto"
   },
   "hero": {
@@ -11,7 +10,7 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Ingeniero de Sistemas",
     "subtitle": "Desarrollador Full Stack",
-    "description": "Transformo ideas en experiencias digitales excepcionales. Especializado en crear aplicaciones web escalables con React, Next.js y TypeScript que resuelven problemas reales de negocio.",
+    "description": "Ingeniero de Sistemas con más de 3 años de experiencia como Desarrollador Full Stack en aplicaciones web y móviles multiplataforma, con énfasis en React. He trabajado con Dart, Firebase, Django, React, Next.js, TypeScript, Node.js y Python. Cuento con experiencia en desarrollo de sitios con React y consumo de APIs públicas, diseño y gestión de bases de datos SQL y NoSQL (Firebase, MongoDB), en entornos cloud y locales. He desarrollado proyectos de e-commerce (WooCommerce), sistema de gestión de reportes de procesos de una fábrica de lácteos, sistemas de gestión de propiedades con geolocalización, landing pages y reportes automatizados (PDF y Excel).",
     "cv": "Descargar CV",
     "value1": "3+ años",
     "value1Label": "Experiencia",
@@ -116,7 +115,7 @@
     "title": "Lo Que Dicen Mis Clientes",
     "subtitle": "Testimonios de personas y empresas con las que he trabajado",
     "testimonial1": {
-      "name": "María González",
+      "name": "Camilo Marcillo",
       "position": "Gerente General",
       "company": "Lacteos Don Juan",
       "text": "David transformó completamente nuestra presencia digital. El e-commerce que desarrolló superó todas nuestras expectativas y las ventas online se incrementaron significativamente. Su profesionalismo y atención al detalle son excepcionales."
@@ -128,8 +127,8 @@
       "text": "Trabajar con David fue una experiencia extraordinaria. Su capacidad para entender nuestras necesidades y traducirlas en una solución técnica robusta es impresionante. La plataforma inmobiliaria funciona perfectamente y nuestros clientes están encantados."
     },
     "testimonial3": {
-      "name": "Ana Martínez",
-      "position": "Líder de Operaciones",
+      "name": "Camilo Marcillo",
+      "position": "Gerente General",
       "company": "Lacteos Don Juan",
       "text": "El sistema de reportes automatizados que David creó nos ahorró innumerables horas de trabajo manual. La precisión y facilidad de uso son excepcionales. Definitivamente un profesional altamente recomendado."
     }

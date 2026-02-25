@@ -3,7 +3,6 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
-    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -11,7 +10,7 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Systems Engineer",
     "subtitle": "Full Stack Developer",
-    "description": "I transform ideas into exceptional digital experiences. Specialized in building scalable web applications with React, Next.js, and TypeScript that solve real business problems.",
+    "description": "Systems Engineer with over 3 years of experience as a Full Stack Developer in web and mobile cross-platform applications, with a focus on React. I have worked with Dart, Firebase, Django, React, Next.js, TypeScript, Node.js and Python. I have experience developing sites with React and consuming public APIs, designing and managing SQL and NoSQL databases (Firebase, MongoDB) in both cloud and local environments. I have built e-commerce projects (WooCommerce), a report management system for a dairy factory, property management systems with geolocation, landing pages, and automated reports (PDF and Excel).",
     "cv": "Download CV",
     "value1": "3+ years",
     "value1Label": "Experience",
@@ -116,7 +115,7 @@
     "title": "What My Clients Say",
     "subtitle": "Testimonials from people and companies I've worked with",
     "testimonial1": {
-      "name": "María González",
+      "name": "Camilo Marcillo",
       "position": "General Manager",
       "company": "Lacteos Don Juan",
       "text": "David completely transformed our digital presence. The e-commerce he developed exceeded all our expectations and online sales increased significantly. His professionalism and attention to detail are exceptional."
@@ -128,8 +127,8 @@
       "text": "Working with David was an extraordinary experience. His ability to understand our needs and translate them into a robust technical solution is impressive. The real estate platform works perfectly and our clients are delighted."
     },
     "testimonial3": {
-      "name": "Ana Martínez",
-      "position": "Operations Lead",
+      "name": "Camilo Marcillo",
+      "position": "General Manager",
       "company": "Lacteos Don Juan",
       "text": "The automated reporting system David created saved us countless hours of manual work. The accuracy and ease of use are exceptional. Definitely a highly recommended professional."
     }
