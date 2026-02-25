@@ -119,7 +119,7 @@ export default function Testimonials() {
 
                   {/* Texto del testimonio */}
                   <p className="text-secondary-light dark:text-secondary-dark leading-relaxed italic text-justify">
-                    "{testimonial.text}"
+                    &ldquo;{testimonial.text}&rdquo;
                   </p>
 
                   {/* Información del cliente */}
