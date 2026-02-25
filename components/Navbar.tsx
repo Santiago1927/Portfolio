@@ -101,7 +101,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href, item.external)}
+                onClick={() => scrollToSection(item.href)}
                 className="relative px-4 py-2 text-sm font-medium text-primary-light dark:text-primary-dark hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 group"
               >
                 {item.name}
@@ -185,7 +185,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href, item.external)}
+                onClick={() => scrollToSection(item.href)}
                 className="block w-full text-left px-4 py-3 rounded-lg text-primary-light dark:text-primary-dark hover:bg-accent-500/10 dark:hover:bg-accent-400/10 hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 font-medium"
               >
                 {item.name}
