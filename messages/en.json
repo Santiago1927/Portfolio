@@ -3,6 +3,7 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
+    "certificates": "Certificates",
     "contact": "Contact"
   },
   "hero": {
@@ -84,6 +85,45 @@
       "name": "Automated Reporting System",
       "description": "Enterprise solution for automatic report generation in multiple formats (PDF and Excel). MongoDB integration for real-time data processing and customizable exports.",
       "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
+    }
+  },
+  "certificates": {
+    "title": "Certificates",
+    "subtitle": "Certifications and completed courses",
+    "cert1": {
+      "title": "Basic English Course on Vocabulary and Expressions",
+      "issuer": "Platzi",
+      "date": "February 2026"
+    },
+    "cert2": {
+      "title": "Python Intermediate",
+      "issuer": "Sololearn",
+      "date": "July 2023"
+    },
+    "cert3": {
+      "title": "IBM PY0101EN: Python 101 for Data Science",
+      "issuer": "IBM / Cognitive Class",
+      "date": "August 2023"
+    },
+    "cert4": {
+      "title": "Introduction to IoT",
+      "issuer": "Cisco Networking Academy",
+      "date": "March 2022"
+    },
+    "cert5": {
+      "title": "Fundamentals of Javascript through Rock-Paper-Scissors",
+      "issuer": "IBM / Cognitive Class",
+      "date": "June 2023"
+    },
+    "cert6": {
+      "title": "JavaScript Mastery: From Beginner to Expert",
+      "issuer": "Udemy",
+      "date": "November 2025"
+    },
+    "cert7": {
+      "title": "Artificial Intelligence Basic Level",
+      "issuer": "TalentoTech - Min TIC / UTP FaceIT",
+      "date": "August 2025"
     }
   },
   "contact": {

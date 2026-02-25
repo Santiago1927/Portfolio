@@ -3,6 +3,7 @@
     "about": "Acerca de",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "certificates": "Certificados",
     "contact": "Contacto"
   },
   "hero": {
@@ -84,6 +85,45 @@
       "name": "Sistema de Reportes Automatizados",
       "description": "Solución empresarial para generación automática de reportes en múltiples formatos (PDF y Excel). Integración con MongoDB para procesamiento de datos en tiempo real y exportación personalizable.",
       "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
+    }
+  },
+  "certificates": {
+    "title": "Certificados",
+    "subtitle": "Certificaciones y cursos completados",
+    "cert1": {
+      "title": "Basic English Course on Vocabulary and Expressions",
+      "issuer": "Platzi",
+      "date": "Febrero 2026"
+    },
+    "cert2": {
+      "title": "Python Intermediate",
+      "issuer": "Sololearn",
+      "date": "Julio 2023"
+    },
+    "cert3": {
+      "title": "IBM PY0101EN: Python 101 for Data Science",
+      "issuer": "IBM / Cognitive Class",
+      "date": "Agosto 2023"
+    },
+    "cert4": {
+      "title": "Introducción a IoT",
+      "issuer": "Cisco Networking Academy",
+      "date": "Marzo 2022"
+    },
+    "cert5": {
+      "title": "Fundamentals of Javascript through Rock-Paper-Scissors",
+      "issuer": "IBM / Cognitive Class",
+      "date": "Junio 2023"
+    },
+    "cert6": {
+      "title": "Maestría en JavaScript: Desde Principiante Hasta Experto",
+      "issuer": "Udemy",
+      "date": "Noviembre 2025"
+    },
+    "cert7": {
+      "title": "Inteligencia Artificial Nivel Básico",
+      "issuer": "TalentoTech - Min TIC / UTP FaceIT",
+      "date": "Agosto 2025"
     }
   },
   "contact": {
