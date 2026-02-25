@@ -179,7 +179,7 @@ export default function Certificates() {
       }, TRANSITION_MS);
       return () => clearTimeout(timer);
     }
-  }, [displayIndex]);
+  }, [displayIndex, N]);
 
   useEffect(() => {
     if (!animated) {
