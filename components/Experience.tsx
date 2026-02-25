@@ -26,27 +26,35 @@ export default function Experience() {
       position: t("job1.position"),
       period: t("job1.period"),
       description: t("job1.description"),
+      metrics: [
+        { value: t("job1.metric1Value"), label: t("job1.metric1Label") },
+        { value: t("job1.metric2Value"), label: t("job1.metric2Label") },
+      ],
     },
     {
       company: t("job2.company"),
       position: t("job2.position"),
       period: t("job2.period"),
       description: t("job2.description"),
+      metrics: [
+        { value: t("job2.metric1Value"), label: t("job2.metric1Label") },
+        { value: t("job2.metric2Value"), label: t("job2.metric2Label") },
+      ],
     },
     {
       company: t("job3.company"),
       position: t("job3.position"),
       period: t("job3.period"),
       description: t("job3.description"),
+      metrics: [
+        { value: t("job3.metric1Value"), label: t("job3.metric1Label") },
+        { value: t("job3.metric2Value"), label: t("job3.metric2Label") },
+      ],
     },
   ];
 
   return (
-    <section
-      id="experience"
-      ref={ref}
-      className="py-24 px-4"
-    >
+    <section id="experience" ref={ref} className="py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +73,9 @@ export default function Experience() {
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
-              animate={isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
+              animate={
+                isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }
+              }
               transition={{ delay: 0.2 }}
               className="w-24 h-1 bg-gradient-to-r from-accent-500 to-purple-500 mx-auto rounded-full"
             ></motion.div>
@@ -83,7 +93,7 @@ export default function Experience() {
                 transition={{ duration: 0.6, delay: 0.2 + index * 0.15 }}
                 className="relative pl-8 md:pl-12 border-l-2 border-gradient-to-b from-accent-500 to-purple-500"
                 style={{
-                  borderImage: "linear-gradient(to bottom, #3b82f6, #8b5cf6) 1"
+                  borderImage: "linear-gradient(to bottom, #3b82f6, #8b5cf6) 1",
                 }}
               >
                 {/* Punto indicador en la línea de tiempo */}
@@ -114,9 +124,25 @@ export default function Experience() {
                   </div>
 
                   {/* Descripción */}
-                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed">
+                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed mb-6">
                     {job.description}
                   </p>
+
+                  {/* Métricas de impacto */}
+                  {job.metrics && job.metrics.length > 0 && (
+                    <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200/50 dark:border-gray-700/50">
+                      {job.metrics.map((metric, metricIndex) => (
+                        <div key={metricIndex} className="text-center">
+                          <div className="text-2xl font-bold text-accent-500 dark:text-accent-400">
+                            {metric.value}
+                          </div>
+                          <div className="text-sm text-secondary-light dark:text-secondary-dark mt-1">
+                            {metric.label}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}

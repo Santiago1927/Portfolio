@@ -3,6 +3,7 @@
     "about": "About",
     "experience": "Experience",
     "projects": "Projects",
+    "blog": "Blog",
     "contact": "Contact"
   },
   "hero": {
@@ -10,8 +11,14 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Systems Engineer",
     "subtitle": "Full Stack Developer",
-    "description": "Systems Engineer with over 3 years of experience in software development. Web design including gathering user requirements. I have worked on projects from scratch and integrated into teams with software in development, optimizing its architecture, performance, and maintainability. Throughout my career, I have collaborated with high-level companies and startups with the ability to meet compatibility objectives while meeting and exceeding client demands.",
-    "cv": "Download CV"
+    "description": "I transform ideas into exceptional digital experiences. Specialized in building scalable web applications with React, Next.js, and TypeScript that solve real business problems.",
+    "cv": "Download CV",
+    "value1": "3+ years",
+    "value1Label": "Experience",
+    "value2": "10+",
+    "value2Label": "Successful Projects",
+    "value3": "100%",
+    "value3Label": "Client Satisfaction"
   },
   "about": {
     "title": "About Me",
@@ -25,25 +32,38 @@
       "company": "Lacteos Don Juan",
       "position": "Web Developer",
       "period": "March 2022 - November 2022",
-      "description": "Complete development of e-commerce website for dairy company using WordPress and WooCommerce. Implementation of customized product catalog, optimized shopping cart, and responsive design. Development of custom plugins including Spectra Advanced Visual Editor for page editing, secure checkout system with integrated payment methods (credit card, debit card, and other options), and advanced transaction management. Integration of Google Shopping and Google Ads to maximize visibility. Complete SEO optimization to improve search engine rankings. Implementation of security measures against spam (Akismet Anti-Spam) and data protection. Deployment and configuration on Hostinger server with performance optimization."
+      "description": "Complete development of e-commerce website for dairy company using WordPress and WooCommerce. Implementation of customized product catalog, optimized shopping cart, and responsive design. Development of custom plugins including Spectra Advanced Visual Editor for page editing, secure checkout system with integrated payment methods (credit card, debit card, and other options), and advanced transaction management. Integration of Google Shopping and Google Ads to maximize visibility. Complete SEO optimization to improve search engine rankings. Implementation of security measures against spam (Akismet Anti-Spam) and data protection. Deployment and configuration on Hostinger server with performance optimization.",
+      "metric1Value": "200%",
+      "metric1Label": "Increase in online sales",
+      "metric2Value": "#1",
+      "metric2Label": "Local Google ranking"
     },
     "job2": {
       "company": "Freelance - Lacteos Don Juan",
       "position": "Full Stack Developer",
       "period": "October 2023 - September 2024",
-      "description": "Development of complete web application for procedure registration and control using full-stack architecture. Backend with RESTful API in NestJS with TypeScript, implementing JWT authentication middleware for robust security. User and role management with MongoDB (Mongoose) for granular access control. Frontend built in React, integrating Tailwind CSS for 100% responsive design and modern interface system. Development of automated reporting system: dynamic report generation in real-time with pagination and sorting, PDF export with dynamic template design and automatic generation, Excel (XLSX) export with configurable files and numeric formats. Integration of Chart.js for analytical data visualization with interactive charts. Implementation of dynamic forms with client and server-side validations, role-based permission system for load and access operations, and user management with password encryption (bcrypt) and secure storage. Dependency injection with NestJS for scalable and maintainable architecture."
+      "description": "Development of complete web application for procedure registration and control using full-stack architecture. Backend with RESTful API in NestJS with TypeScript, implementing JWT authentication middleware for robust security. User and role management with MongoDB (Mongoose) for granular access control. Frontend built in React, integrating Tailwind CSS for 100% responsive design and modern interface system. Development of automated reporting system: dynamic report generation in real-time with pagination and sorting, PDF export with dynamic template design and automatic generation, Excel (XLSX) export with configurable files and numeric formats. Integration of Chart.js for analytical data visualization with interactive charts. Implementation of dynamic forms with client and server-side validations, role-based permission system for load and access operations, and user management with password encryption (bcrypt) and secure storage. Dependency injection with NestJS for scalable and maintainable architecture.",
+      "metric1Value": "85%",
+      "metric1Label": "Reduction in manual time",
+      "metric2Value": "0",
+      "metric2Label": "Report errors"
     },
     "job3": {
       "company": "Inmobiliaria Realhaus",
       "position": "Full Stack Developer",
       "period": "February 2024 - Current",
-      "description": "Design and development of full-stack architecture for real estate management web application. Backend with REST API and business logic in NestJS with TypeScript, frontend SPA with React and Tailwind CSS. Implementation of dynamic property catalog with advanced search filters, optimized visualization, and efficient pagination. Integration of interactive map using Leaflet with geolocation for precise property location. Data consumption and cache management with React Query for optimized searches and better performance. Implementation of image and file upload and management with Firebase Storage. Advanced SEO optimization to improve search engine visibility. Configuration of efficient queries, client-side pagination with response times through efficient queries. Social media integration for lead generation and client communication. Domain acquired on Hostinger and site deployment on Vercel for high availability and performance."
+      "description": "Design and development of full-stack architecture for real estate management web application. Backend with REST API and business logic in NestJS with TypeScript, frontend SPA with React and Tailwind CSS. Implementation of dynamic property catalog with advanced search filters, optimized visualization, and efficient pagination. Integration of interactive map using Leaflet with geolocation for precise property location. Data consumption and cache management with React Query for optimized searches and better performance. Implementation of image and file upload and management with Firebase Storage. Advanced SEO optimization to improve search engine visibility. Configuration of efficient queries, client-side pagination with response times through efficient queries. Social media integration for lead generation and client communication. Domain acquired on Hostinger and site deployment on Vercel for high availability and performance.",
+      "metric1Value": "50%",
+      "metric1Label": "Reduction in search time",
+      "metric2Value": "3x",
+      "metric2Label": "More monthly inquiries"
     }
   },
   "projects": {
     "title": "Featured Projects",
     "viewCode": "View Code",
     "viewDemo": "View Demo",
+    "viewMore": "View project details",
     "project1": {
       "name": "Real Estate Management System",
       "description": "Enterprise-grade platform for real estate property management. Features Firebase authentication, state management with React Query, advanced search with dynamic filters, and intuitive admin dashboard.",
@@ -59,34 +79,144 @@
     "project2": {
       "name": "E-commerce Lacteos Don Juan",
       "description": "Comprehensive online store with product catalog, shopping cart, payment gateway, and administrative panel. Implementation of custom plugins and SEO optimization to improve search engine visibility.",
-      "tech": [
-        "WordPress",
-        "WooCommerce",
-        "PHP",
-        "MySQL",
-        "Hostinger"
-      ]
+      "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
     },
     "project3": {
       "name": "Automated Reporting System",
       "description": "Enterprise solution for automatic report generation in multiple formats (PDF and Excel). MongoDB integration for real-time data processing and customizable exports.",
-      "tech": [
-        "Next.js",
-        "React",
-        "MongoDB",
-        "Node.js",
-        "PDF Generation"
-      ]
+      "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
     }
   },
   "contact": {
     "title": "Let's Work Together",
     "description": "Have a project in mind? I'd love to hear about your idea and how I can help bring it to life.",
     "email": "Send Email",
-    "location": "Pasto, Nariño, Colombia"
+    "location": "Pasto, Nariño, Colombia",
+    "form": {
+      "name": "Full name",
+      "namePlaceholder": "Your name",
+      "nameRequired": "Name is required",
+      "email": "Email address",
+      "emailPlaceholder": "you@email.com",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project or idea...",
+      "messageRequired": "Message is required",
+      "messageTooShort": "Message must be at least 10 characters",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message sent!",
+      "successMessage": "Thanks for reaching out. I'll get back to you as soon as possible.",
+      "errorTitle": "Error sending",
+      "errorMessage": "There was a problem sending your message. Please try again."
+    }
+  },
+  "testimonials": {
+    "title": "What My Clients Say",
+    "subtitle": "Testimonials from people and companies I've worked with",
+    "testimonial1": {
+      "name": "María González",
+      "position": "General Manager",
+      "company": "Lacteos Don Juan",
+      "text": "David completely transformed our digital presence. The e-commerce he developed exceeded all our expectations and online sales increased significantly. His professionalism and attention to detail are exceptional."
+    },
+    "testimonial2": {
+      "name": "Carlos Rodríguez",
+      "position": "Project Director",
+      "company": "Inmobiliaria Realhaus",
+      "text": "Working with David was an extraordinary experience. His ability to understand our needs and translate them into a robust technical solution is impressive. The real estate platform works perfectly and our clients are delighted."
+    },
+    "testimonial3": {
+      "name": "Ana Martínez",
+      "position": "Operations Lead",
+      "company": "Lacteos Don Juan",
+      "text": "The automated reporting system David created saved us countless hours of manual work. The accuracy and ease of use are exceptional. Definitely a highly recommended professional."
+    }
   },
   "footer": {
     "rights": "All rights reserved.",
     "builtWith": "Built with Next.js, React and Tailwind CSS"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Articles about web development, React, Next.js and modern technologies",
+    "readMore": "Read more",
+    "backToHome": "Back to home",
+    "backToBlog": "Back to blog",
+    "shareArticle": "Did you like this article? Share it!",
+    "post1": {
+      "title": "React Best Practices in 2024",
+      "excerpt": "Discover the best practices and modern patterns for building scalable and maintainable React applications.",
+      "content": "React has evolved significantly in recent years. In this article we explore current best practices for developing modern applications with React.\n\n1. Use Hooks Effectively\nHooks have revolutionized the way we write React components. useState and useEffect are fundamental, but hooks like useMemo and useCallback can significantly optimize performance.\n\n2. Small and Focused Components\nKeep your components small and with a single responsibility. This makes your code easier to test and maintain.\n\n3. TypeScript for Greater Safety\nTypeScript helps you catch errors at development time and makes your code more robust.\n\n4. Server Components with Next.js\nReact Server Components allow rendering components on the server, significantly improving performance."
+    },
+    "post2": {
+      "title": "Next.js Performance Optimization",
+      "excerpt": "Learn to optimize the performance of your Next.js applications with advanced loading and rendering techniques.",
+      "content": "Next.js offers multiple tools to optimize the performance of your web applications. Here are the most effective techniques.\n\n1. Image Optimization\nUse the next/image component for automatic image optimization. It supports lazy loading, modern formats like WebP, and responsive images.\n\n2. Intelligent Code Splitting\nNext.js automatically splits your code, but you can optimize it further using dynamic imports for heavy components.\n\n3. Server-Side Rendering and Static Generation\nChoose the right strategy: SSR for dynamic content, SSG for static content, and ISR for the best of both worlds.\n\n4. Caching and Revalidation\nImplement intelligent caching strategies using HTTP headers and Next.js revalidation API."
+    },
+    "post3": {
+      "title": "TypeScript Tips and Tricks",
+      "excerpt": "Practical tips to make the most of TypeScript in your web development projects.",
+      "content": "TypeScript has become the standard for professional JavaScript projects. Here are some tips for using it effectively.\n\n1. Generic Types\nGeneric types allow you to create reusable components and functions with complete type safety.\n\n2. Utility Types\nTypeScript includes utility types like Partial, Pick, Omit, and Record that simplify type manipulation.\n\n3. Type Guards\nUse type guards to refine types at runtime and improve TypeScript's inference.\n\n4. Strict Configuration\nEnable strict mode in tsconfig.json to catch more potential errors.\n\n5. Interfaces vs Types\nWhen to use interfaces and when to use types. Generally, interfaces for objects that can be extended, types for unions and intersections."
+    }
+  },
+  "projectDetails": {
+    "backToProjects": "Back to Projects",
+    "timeline": "Timeline",
+    "team": "Team",
+    "role": "Role",
+    "viewDemo": "View Demo",
+    "viewCode": "View Code",
+    "screenshotPlaceholder": "Screenshot",
+    "problemTitle": "The Problem",
+    "solutionTitle": "The Solution",
+    "technologiesTitle": "Technologies Used",
+    "resultsTitle": "Results & Impact",
+    "realhaus": {
+      "title": "Realhaus Real Estate Management System",
+      "tagline": "Complete platform for property management",
+      "description": "Development of a full-stack enterprise solution that revolutionized how Realhaus manages its property catalog, improving the experience for both users and administrators.",
+      "problem": "Realhaus real estate agency needed a modern platform to manage their growing property catalog. Clients had difficulty finding relevant properties and the team wasted time on manual administrative tasks.",
+      "solution": "I developed a full-stack web application with Next.js and React, integrating Firebase for authentication and storage. I implemented an advanced search system with dynamic filters, interactive maps with Leaflet, and an intuitive admin panel. React Query optimizes performance through intelligent caching.",
+      "feature1": "Secure authentication system with Firebase Auth",
+      "feature2": "Advanced search with filters by price, location, type and features",
+      "feature3": "Interactive map with precise property geolocation",
+      "feature4": "Admin panel with complete CRUD for properties",
+      "feature5": "SEO optimization and 100% responsive design",
+      "result1": "Reduction in search time",
+      "result2": "More monthly inquiries",
+      "result3": "System uptime"
+    },
+    "lacteosdonjuan": {
+      "title": "Lacteos Don Juan E-commerce",
+      "tagline": "Complete online store for dairy products",
+      "description": "Design and development of a comprehensive online store that enabled Lacteos Don Juan to digitize their business and reach new markets, integrating payment gateways and digital marketing tools.",
+      "problem": "Lacteos Don Juan needed to expand their digital presence and offer online sales of their products. They required an easy-to-manage platform with secure payment gateway and conversion optimization.",
+      "solution": "I implemented a complete e-commerce solution using WordPress and WooCommerce. I developed custom plugins for the visual editor, optimized checkout system with multiple payment methods, integration with Google Shopping and Google Ads. I applied advanced SEO and security techniques.",
+      "feature1": "Dynamic product catalog with inventory management",
+      "feature2": "Secure checkout with multiple payment methods",
+      "feature3": "Integration with Google Shopping and Google Ads",
+      "feature4": "Complete SEO optimization for organic positioning",
+      "feature5": "Admin panel for order and customer management",
+      "result1": "Increase in online sales",
+      "result2": "More organic traffic (SEO)",
+      "result3": "In local searches (Google)"
+    },
+    "reportes": {
+      "title": "Automated Reporting System",
+      "tagline": "Real-time enterprise report automation",
+      "description": "Enterprise solution that fully automated the report generation process, eliminating hours of manual work and reducing errors to zero through PDF and Excel exports.",
+      "problem": "The Lacteos Don Juan team spent hours weekly creating reports manually, with high risk of human error. They needed an automated solution that would generate accurate and professional reports in multiple formats.",
+      "solution": "I built a full-stack application with Next.js, React and MongoDB. I implemented dynamic report generation with data visualization using Chart.js, automatic PDF export with customizable templates and Excel with configurable formats. The system includes JWT authentication, role management and granular permissions.",
+      "feature1": "Automatic real-time report generation",
+      "feature2": "PDF export with professional design and dynamic templates",
+      "feature3": "Excel (XLSX) export with configurable formats",
+      "feature4": "Analytical visualization with interactive charts (Chart.js)",
+      "feature5": "Role-based permission system with JWT security",
+      "result1": "Reduction in generation time",
+      "result2": "Faster than manual process",
+      "result3": "Human errors"
+    }
   }
 }

@@ -1,10 +1,10 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 interface Project {
   name: string;
@@ -25,8 +25,11 @@ interface Project {
  */
 export default function Projects() {
   const t = useTranslations("projects");
+  const locale = useLocale();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  const projectIds = ["realhaus", "lacteosdonjuan", "reportes"];
 
   const projects: Project[] = [
     {
@@ -59,7 +62,11 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" ref={ref} className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30">
+    <section
+      id="projects"
+      ref={ref}
+      className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
+    >
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -78,7 +85,9 @@ export default function Projects() {
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
-              animate={isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }}
+              animate={
+                isInView ? { opacity: 1, scaleX: 1 } : { opacity: 0, scaleX: 0 }
+              }
               transition={{ delay: 0.2 }}
               className="w-24 h-1 bg-gradient-to-r from-accent-500 to-purple-500 mx-auto rounded-full"
             ></motion.div>
@@ -94,7 +103,10 @@ export default function Projects() {
                   isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
                 }
                 transition={{ duration: 0.6, delay: 0.2 + index * 0.1 }}
-                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-accent-500/50 dark:hover:border-accent-400/50 hover:shadow-2xl hover:shadow-accent-500/10 transition-all duration-300 hover:-translate-y-2"
+                onClick={() => {
+                  window.location.href = `/${locale}/projects/${projectIds[index]}`;
+                }}
+                className="group relative bg-white dark:bg-gray-800 rounded-2xl p-6 md:p-8 border border-gray-200/50 dark:border-gray-700/50 hover:border-accent-500/50 dark:hover:border-accent-400/50 hover:shadow-2xl hover:shadow-accent-500/10 transition-all duration-300 hover:-translate-y-2 h-full cursor-pointer"
               >
                 {/* Gradiente de fondo sutil */}
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -110,27 +122,29 @@ export default function Projects() {
                     {/* Enlaces */}
                     <div className="flex space-x-2 flex-shrink-0">
                       {project.github && (
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.open(project.github, "_blank");
+                          }}
                           className="p-2 rounded-lg bg-surface-light dark:bg-surface-dark hover:bg-accent-500/10 dark:hover:bg-accent-400/10 text-secondary-light dark:text-secondary-dark hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 hover:scale-110"
                           aria-label={t("viewCode")}
                         >
                           <Github className="w-5 h-5" />
-                        </a>
+                        </button>
                       )}
 
                       {project.demo && (
-                        <a
-                          href={project.demo}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            window.open(project.demo, "_blank");
+                          }}
                           className="p-2 rounded-lg bg-surface-light dark:bg-surface-dark hover:bg-accent-500/10 dark:hover:bg-accent-400/10 text-secondary-light dark:text-secondary-dark hover:text-accent-500 dark:hover:text-accent-400 transition-all duration-200 hover:scale-110"
                           aria-label={t("viewDemo")}
                         >
                           <ExternalLink className="w-5 h-5" />
-                        </a>
+                        </button>
                       )}
                     </div>
                   </div>
@@ -150,6 +164,12 @@ export default function Projects() {
                         {tech}
                       </span>
                     ))}
+                  </div>
+
+                  {/* Botón "Ver más" */}
+                  <div className="pt-4 flex items-center text-accent-500 dark:text-accent-400 text-sm font-medium group-hover:underline">
+                    <span>{t("viewMore")}</span>
+                    <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </motion.div>

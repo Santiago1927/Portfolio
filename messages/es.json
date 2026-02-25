@@ -3,6 +3,7 @@
     "about": "Acerca de",
     "experience": "Experiencia",
     "projects": "Proyectos",
+    "blog": "Blog",
     "contact": "Contacto"
   },
   "hero": {
@@ -10,8 +11,14 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Ingeniero de Sistemas",
     "subtitle": "Desarrollador Full Stack",
-    "description": "Ingeniero de Sistemas con mas de 3 años de experiencia en el area de desarrollo de software. Diseño de páginas web incluyendo la recopilación de las necesidades de los usuarios. He trabajado en proyectos desde cero y me he integrado en equipos con software en desarrollo, optimizando su arquitectura, rendimiento y mantenibilidad. A lo largo de mi carrera, he colaborado con empresas de alto nivel y startups con la capacidad para cumplir con los objetivos de compatibilidad y al mismo tiempo cumplir y superar las demandas del cliente. ",
-    "cv": "Descargar CV"
+    "description": "Transformo ideas en experiencias digitales excepcionales. Especializado en crear aplicaciones web escalables con React, Next.js y TypeScript que resuelven problemas reales de negocio.",
+    "cv": "Descargar CV",
+    "value1": "3+ años",
+    "value1Label": "Experiencia",
+    "value2": "10+",
+    "value2Label": "Proyectos Exitosos",
+    "value3": "100%",
+    "value3Label": "Clientes Satisfechos"
   },
   "about": {
     "title": "Acerca de mí",
@@ -25,25 +32,38 @@
       "company": "Lacteos Don Juan",
       "position": "Desarrollador Web",
       "period": "Marzo 2022 - Noviembre 2022",
-      "description": "Desarrollo completo de sitio web de e-commerce para empresa láctea utilizando WordPress y WooCommerce. Implementación de catálogo de productos personalizado, carrito de compras optimizado y diseño responsive. Desarrollo de plugins personalizados incluyendo Spectra Editor Visual Avanzado para edición de páginas, sistema de checkout seguro con métodos de pago integrados (tarjeta de crédito, débito y otras opciones), y gestión avanzada de transacciones. Integración de Google Shopping y Google Ads para maximizar visibilidad. Optimización SEO completa para mejorar posicionamiento en buscadores. Implementación de medidas de seguridad contra spam (Akismet Anti-Spam) y protección de datos. Despliegue y configuración en servidor Hostinger con optimización de rendimiento."
+      "description": "Desarrollo completo de sitio web de e-commerce para empresa láctea utilizando WordPress y WooCommerce. Implementación de catálogo de productos personalizado, carrito de compras optimizado y diseño responsive. Desarrollo de plugins personalizados incluyendo Spectra Editor Visual Avanzado para edición de páginas, sistema de checkout seguro con métodos de pago integrados (tarjeta de crédito, débito y otras opciones), y gestión avanzada de transacciones. Integración de Google Shopping y Google Ads para maximizar visibilidad. Optimización SEO completa para mejorar posicionamiento en buscadores. Implementación de medidas de seguridad contra spam (Akismet Anti-Spam) y protección de datos. Despliegue y configuración en servidor Hostinger con optimización de rendimiento.",
+      "metric1Value": "200%",
+      "metric1Label": "Incremento en ventas online",
+      "metric2Value": "#1",
+      "metric2Label": "Ranking en Google local"
     },
     "job2": {
       "company": "Freelance - Lacteos Don Juan",
       "position": "Desarrollador Full Stack",
       "period": "Octubre 2023 - Septiembre 2024",
-      "description": "Desarrollo de aplicación web completa para registro y control de procedimientos utilizando arquitectura full-stack. Backend con API RESTful en NestJS con TypeScript, implementando middleware de autenticación JWT para seguridad robusta. Gestión de usuarios y roles con MongoDB (Mongoose) para control de acceso granular. Frontend construido en React, integrando Tailwind CSS para diseño 100% responsive y sistema de interfaz moderna. Desarrollo de sistema de reportes automatizados: generación dinámica de reportes en tiempo real con paginación y ordenamiento, exportación a PDF con diseño de plantillas dinámicas y generación automática, exportación a Excel (XLSX) con archivos configurables y formatos numéricos. Integración de Chart.js para visualización analítica de datos con gráficos interactivos. Implementación de formularios dinámicos con validaciones en cliente y servidor, sistema de permisos basado en roles para operaciones de carga y acceso, y gestión de usuarios con encriptación de contraseñas (bcrypt) y almacenamiento seguro. Inyección de dependencias con NestJS para arquitectura escalable y mantenible."
+      "description": "Desarrollo de aplicación web completa para registro y control de procedimientos utilizando arquitectura full-stack. Backend con API RESTful en NestJS con TypeScript, implementando middleware de autenticación JWT para seguridad robusta. Gestión de usuarios y roles con MongoDB (Mongoose) para control de acceso granular. Frontend construido en React, integrando Tailwind CSS para diseño 100% responsive y sistema de interfaz moderna. Desarrollo de sistema de reportes automatizados: generación dinámica de reportes en tiempo real con paginación y ordenamiento, exportación a PDF con diseño de plantillas dinámicas y generación automática, exportación a Excel (XLSX) con archivos configurables y formatos numéricos. Integración de Chart.js para visualización analítica de datos con gráficos interactivos. Implementación de formularios dinámicos con validaciones en cliente y servidor, sistema de permisos basado en roles para operaciones de carga y acceso, y gestión de usuarios con encriptación de contraseñas (bcrypt) y almacenamiento seguro. Inyección de dependencias con NestJS para arquitectura escalable y mantenible.",
+      "metric1Value": "85%",
+      "metric1Label": "Reducción en tiempo manual",
+      "metric2Value": "0",
+      "metric2Label": "Errores en reportes"
     },
     "job3": {
       "company": "Inmobiliaria Realhaus",
       "position": "Desarrollador Full Stack",
       "period": "Febrero 2024 - Actual",
-      "description": "Diseño y desarrollo de arquitectura full-stack para aplicación web de gestión inmobiliaria. Backend con API REST y lógica de negocio en NestJS con TypeScript, frontend SPA con React y Tailwind CSS. Implementación de catálogo dinámico de propiedades listadas con filtros avanzados de búsqueda, visualización optimizada y paginación eficiente. Integración de mapa interactivo usando Leaflet con geolocalización para ubicación precisa de propiedades. Gestión de consumo y caché de datos con React Query para búsquedas optimizadas y mejor rendimiento. Implementación de carga y gestión de imágenes y archivos con almacenamiento en Firebase Storage. Optimización SEO avanzada para mejorar visibilidad en motores de búsqueda. Configuración de consultas eficientes, paginación en el cliente con tiempos de respuesta mediante consultas eficientes. Integración de redes sociales para generación de leads y comunicación entre clientes. Dominio adquirido en Hostinger y despliegue del sitio en Vercel para alta disponibilidad y rendimiento."
+      "description": "Diseño y desarrollo de arquitectura full-stack para aplicación web de gestión inmobiliaria. Backend con API REST y lógica de negocio en NestJS con TypeScript, frontend SPA con React y Tailwind CSS. Implementación de catálogo dinámico de propiedades listadas con filtros avanzados de búsqueda, visualización optimizada y paginación eficiente. Integración de mapa interactivo usando Leaflet con geolocalización para ubicación precisa de propiedades. Gestión de consumo y caché de datos con React Query para búsquedas optimizadas y mejor rendimiento. Implementación de carga y gestión de imágenes y archivos con almacenamiento en Firebase Storage. Optimización SEO avanzada para mejorar visibilidad en motores de búsqueda. Configuración de consultas eficientes, paginación en el cliente con tiempos de respuesta mediante consultas eficientes. Integración de redes sociales para generación de leads y comunicación entre clientes. Dominio adquirido en Hostinger y despliegue del sitio en Vercel para alta disponibilidad y rendimiento.",
+      "metric1Value": "50%",
+      "metric1Label": "Reducción en tiempo de búsqueda",
+      "metric2Value": "3x",
+      "metric2Label": "Más consultas mensuales"
     }
   },
   "projects": {
     "title": "Proyectos Destacados",
     "viewCode": "Ver Código",
     "viewDemo": "Ver Demo",
+    "viewMore": "Ver detalles del proyecto",
     "project1": {
       "name": "Sistema de Gestión Inmobiliaria",
       "description": "Plataforma empresarial completa para administración de propiedades inmobiliarias. Incluye sistema de autenticación Firebase, gestión de estado con React Query, búsqueda avanzada con filtros dinámicos, y panel de administración intuitivo.",
@@ -59,34 +79,144 @@
     "project2": {
       "name": "E-commerce Lacteos Don Juan",
       "description": "Tienda online integral con catálogo de productos, carrito de compras, pasarela de pagos y panel administrativo. Implementación de plugins personalizados y optimización SEO para mejorar visibilidad en motores de búsqueda.",
-      "tech": [
-        "WordPress",
-        "WooCommerce",
-        "PHP",
-        "MySQL",
-        "Hostinger"
-      ]
+      "tech": ["WordPress", "WooCommerce", "PHP", "MySQL", "Hostinger"]
     },
     "project3": {
       "name": "Sistema de Reportes Automatizados",
       "description": "Solución empresarial para generación automática de reportes en múltiples formatos (PDF y Excel). Integración con MongoDB para procesamiento de datos en tiempo real y exportación personalizable.",
-      "tech": [
-        "Next.js",
-        "React",
-        "MongoDB",
-        "Node.js",
-        "PDF Generation"
-      ]
+      "tech": ["Next.js", "React", "MongoDB", "Node.js", "PDF Generation"]
     }
   },
   "contact": {
     "title": "Trabajemos Juntos",
     "description": "¿Tienes un proyecto en mente? Me encantaría conocer más sobre tu idea y cómo puedo ayudarte a hacerla realidad.",
     "email": "Enviar Correo",
-    "location": "Pasto, Nariño, Colombia"
+    "location": "Pasto, Nariño, Colombia",
+    "form": {
+      "name": "Nombre completo",
+      "namePlaceholder": "Tu nombre",
+      "nameRequired": "El nombre es requerido",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@email.com",
+      "emailRequired": "El correo electrónico es requerido",
+      "emailInvalid": "Por favor ingresa un correo electrónico válido",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto o idea...",
+      "messageRequired": "El mensaje es requerido",
+      "messageTooShort": "El mensaje debe tener al menos 10 caracteres",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "successTitle": "¡Mensaje enviado!",
+      "successMessage": "Gracias por contactarme. Te responderé lo antes posible.",
+      "errorTitle": "Error al enviar",
+      "errorMessage": "Hubo un problema al enviar tu mensaje. Por favor inténtalo de nuevo."
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Mis Clientes",
+    "subtitle": "Testimonios de personas y empresas con las que he trabajado",
+    "testimonial1": {
+      "name": "María González",
+      "position": "Gerente General",
+      "company": "Lacteos Don Juan",
+      "text": "David transformó completamente nuestra presencia digital. El e-commerce que desarrolló superó todas nuestras expectativas y las ventas online se incrementaron significativamente. Su profesionalismo y atención al detalle son excepcionales."
+    },
+    "testimonial2": {
+      "name": "Carlos Rodríguez",
+      "position": "Director de Proyectos",
+      "company": "Inmobiliaria Realhaus",
+      "text": "Trabajar con David fue una experiencia extraordinaria. Su capacidad para entender nuestras necesidades y traducirlas en una solución técnica robusta es impresionante. La plataforma inmobiliaria funciona perfectamente y nuestros clientes están encantados."
+    },
+    "testimonial3": {
+      "name": "Ana Martínez",
+      "position": "Líder de Operaciones",
+      "company": "Lacteos Don Juan",
+      "text": "El sistema de reportes automatizados que David creó nos ahorró innumerables horas de trabajo manual. La precisión y facilidad de uso son excepcionales. Definitivamente un profesional altamente recomendado."
+    }
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
     "builtWith": "Desarrollado con Next.js, React y Tailwind CSS"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Artículos sobre desarrollo web, React, Next.js y tecnologías modernas",
+    "readMore": "Leer más",
+    "backToHome": "Volver al inicio",
+    "backToBlog": "Volver al blog",
+    "shareArticle": "¿Te gustó este artículo? ¡Compártelo!",
+    "post1": {
+      "title": "Mejores Prácticas de React en 2024",
+      "excerpt": "Descubre las mejores prácticas y patrones modernos para construir aplicaciones React escalables y mantenibles.",
+      "content": "React ha evolucionado significativamente en los últimos años. En este artículo exploramos las mejores prácticas actuales para desarrollar aplicaciones modernas con React.\n\n1. Usa Hooks de forma efectiva\nLos hooks han revolucionado la forma en que escribimos componentes React. useState y useEffect son fundamentales, pero hooks como useMemo y useCallback pueden optimizar significativamente el rendimiento.\n\n2. Componentes pequeños y enfocados\nMantén tus componentes pequeños y con una única responsabilidad. Esto hace que tu código sea más fácil de testear y mantener.\n\n3. TypeScript para mayor seguridad\nTypeScript te ayuda a detectar errores en tiempo de desarrollo y hace tu código más robusto.\n\n4. Server Components con Next.js\nLos Server Components de React permiten renderizar componentes en el servidor, mejorando significativamente el rendimiento."
+    },
+    "post2": {
+      "title": "Optimización de Rendimiento en Next.js",
+      "excerpt": "Aprende a optimizar el rendimiento de tus aplicaciones Next.js con técnicas avanzadas de carga y renderizado.",
+      "content": "Next.js ofrece múltiples herramientas para optimizar el rendimiento de tus aplicaciones web. Aquí te muestro las técnicas más efectivas.\n\n1. Optimización de Imágenes\nUsa el componente next/image para optimización automática de imágenes. Soporta lazy loading, formatos modernos como WebP, y responsive images.\n\n2. Code Splitting Inteligente\nNext.js divide automáticamente tu código, pero puedes optimizarlo aún más usando dynamic imports para componentes pesados.\n\n3. Server-Side Rendering y Static Generation\nElige la estrategia correcta: SSR para contenido dinámico, SSG para contenido estático, e ISR para lo mejor de ambos mundos.\n\n4. Caching y Revalidación\nImplementa estrategias de caché inteligentes usando headers HTTP y la API de revalidación de Next.js."
+    },
+    "post3": {
+      "title": "Tips y Trucos de TypeScript",
+      "excerpt": "Consejos prácticos para aprovechar al máximo TypeScript en tus proyectos de desarrollo web.",
+      "content": "TypeScript se ha convertido en el estándar para proyectos JavaScript profesionales. Aquí algunos tips para usarlo efectivamente.\n\n1. Tipos Genéricos\nLos tipos genéricos te permiten crear componentes y funciones reutilizables con seguridad de tipos completa.\n\n2. Utility Types\nTypeScript incluye utility types como Partial, Pick, Omit y Record que simplifican la manipulación de tipos.\n\n3. Type Guards\nUsa type guards para refinar tipos en tiempo de ejecución y mejorar la inferencia de TypeScript.\n\n4. Configuración estricta\nHabilita el modo strict en tsconfig.json para detectar más errores potenciales.\n\n5. Interfaces vs Types\nCuándo usar interfaces y cuándo usar types. Generalmente, interfaces para objetos que pueden extenderse, types para uniones y intersecciones."
+    }
+  },
+  "projectDetails": {
+    "backToProjects": "Volver a Proyectos",
+    "timeline": "Duración",
+    "team": "Equipo",
+    "role": "Rol",
+    "viewDemo": "Ver Demo",
+    "viewCode": "Ver Código",
+    "screenshotPlaceholder": "Captura",
+    "problemTitle": "El Problema",
+    "solutionTitle": "La Solución",
+    "technologiesTitle": "Tecnologías Utilizadas",
+    "resultsTitle": "Resultados e Impacto",
+    "realhaus": {
+      "title": "Sistema de Gestión Inmobiliaria Realhaus",
+      "tagline": "Plataforma completa para administración de propiedades",
+      "description": "Desarrollo de una solución full-stack empresarial que revolucionó la forma en que Realhaus gestiona su catálogo de propiedades, mejorando la experiencia de usuarios y administradores.",
+      "problem": "La inmobiliaria Realhaus necesitaba una plataforma moderna para gestionar su creciente catálogo de propiedades. Los clientes tenían dificultades para encontrar propiedades relevantes y el equipo perdía tiempo en tareas administrativas manuales.",
+      "solution": "Desarrollé una aplicación web full-stack con Next.js y React, integrando Firebase para autenticación y almacenamiento. Implementé un sistema de búsqueda avanzada con filtros dinámicos, mapas interactivos con Leaflet y un panel de administración intuitivo. React Query optimiza el rendimiento mediante caché inteligente.",
+      "feature1": "Sistema de autenticación seguro con Firebase Auth",
+      "feature2": "Búsqueda avanzada con filtros por precio, ubicación, tipo y características",
+      "feature3": "Mapa interactivo con geolocalización precisa de propiedades",
+      "feature4": "Panel de administración con CRUD completo para propiedades",
+      "feature5": "Optimización SEO y diseño 100% responsive",
+      "result1": "Reducción en tiempo de búsqueda",
+      "result2": "Más consultas mensuales",
+      "result3": "Disponibilidad del sistema"
+    },
+    "lacteosdonjuan": {
+      "title": "E-commerce Lacteos Don Juan",
+      "tagline": "Tienda online completa para productos lácteos",
+      "description": "Diseño y desarrollo de una tienda online integral que permitió a Lacteos Don Juan digitalizar su negocio y alcanzar nuevos mercados, integrando pasarelas de pago y herramientas de marketing digital.",
+      "problem": "Lacteos Don Juan necesitaba expandir su presencia digital y ofrecer venta online de sus productos. Requerían una plataforma fácil de administrar con pasarela de pagos segura y optimizada para conversiones.",
+      "solution": "Implementé una solución completa de e-commerce utilizando WordPress y WooCommerce. Desarrollé plugins personalizados para el editor visual, sistema de checkout optimizado con múltiples métodos de pago, integración con Google Shopping y Google Ads. Apliqué técnicas avanzadas de SEO y seguridad.",
+      "feature1": "Catálogo de productos dinámico con gestión de inventario",
+      "feature2": "Checkout seguro con múltiples métodos de pago",
+      "feature3": "Integración con Google Shopping y Google Ads",
+      "feature4": "Optimización SEO completa para posicionamiento orgánico",
+      "feature5": "Panel administrativo para gestión de pedidos y clientes",
+      "result1": "Incremento en ventas online",
+      "result2": "Más tráfico orgánico (SEO)",
+      "result3": "En búsquedas locales (Google)"
+    },
+    "reportes": {
+      "title": "Sistema de Reportes Automatizados",
+      "tagline": "Automatización de reportes empresariales en tiempo real",
+      "description": "Solución empresarial que automatizó por completo el proceso de generación de reportes, eliminando horas de trabajo manual y reduciendo errores a cero mediante exportación a PDF y Excel.",
+      "problem": "El equipo de Lacteos Don Juan invertía horas semanales creando reportes manualmente, con alto riesgo de errores humanos. Necesitaban una solución automatizada que generara reportes precisos y profesionales en múltiples formatos.",
+      "solution": "Construí una aplicación full-stack con Next.js, React y MongoDB. Implementé generación dinámica de reportes con visualización de datos usando Chart.js, exportación automática a PDF con plantillas personalizables y Excel con formatos configurables. El sistema incluye autenticación JWT, gestión de roles y permisos granulares.",
+      "feature1": "Generación automática de reportes en tiempo real",
+      "feature2": "Exportación a PDF con diseño profesional y plantillas dinámicas",
+      "feature3": "Exportación a Excel (XLSX) con formatos configurables",
+      "feature4": "Visualización analítica con gráficos interactivos (Chart.js)",
+      "feature5": "Sistema de permisos basado en roles con seguridad JWT",
+      "result1": "Reducción en tiempo de generación",
+      "result2": "Más rápido que el proceso manual",
+      "result3": "Errores humanos"
+    }
   }
 }

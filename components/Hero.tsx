@@ -28,7 +28,10 @@ export default function Hero() {
 
       {/* Elementos decorativos de fondo */}
       <div className="absolute top-20 left-10 w-72 h-72 bg-accent-500/10 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+      <div
+        className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-float"
+        style={{ animationDelay: "1s" }}
+      ></div>
 
       <div className="relative max-w-7xl mx-auto w-full z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -90,6 +93,39 @@ export default function Hero() {
             >
               {t("description")}
             </motion.p>
+
+            {/* Métricas de impacto */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.65 }}
+              className="grid grid-cols-3 gap-4 max-w-lg"
+            >
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-accent-500 dark:text-accent-400">
+                  {t("value1")}
+                </div>
+                <div className="text-sm text-secondary-light dark:text-secondary-dark mt-1">
+                  {t("value1Label")}
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-accent-500 dark:text-accent-400">
+                  {t("value2")}
+                </div>
+                <div className="text-sm text-secondary-light dark:text-secondary-dark mt-1">
+                  {t("value2Label")}
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl font-bold text-accent-500 dark:text-accent-400">
+                  {t("value3")}
+                </div>
+                <div className="text-sm text-secondary-light dark:text-secondary-dark mt-1">
+                  {t("value3Label")}
+                </div>
+              </div>
+            </motion.div>
 
             {/* Ubicación */}
             <motion.div
