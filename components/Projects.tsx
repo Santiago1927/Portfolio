@@ -65,7 +65,7 @@ export default function Projects() {
     <section
       id="projects"
       ref={ref}
-      className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
+      className="py-16 md:py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -74,7 +74,7 @@ export default function Projects() {
           transition={{ duration: 0.6 }}
         >
           {/* Título de la sección */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -150,7 +150,7 @@ export default function Projects() {
                   </div>
 
                   {/* Descripción */}
-                  <p className="text-secondary-light dark:text-secondary-dark text-sm leading-relaxed text-justify">
+                  <p className="text-secondary-light dark:text-secondary-dark text-sm leading-relaxed text-left">
                     {project.description}
                   </p>
 

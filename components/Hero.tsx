@@ -35,13 +35,13 @@ export default function Hero() {
       ></div>
 
       <div className="relative max-w-7xl mx-auto w-full z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Contenido de texto */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="space-y-6"
+            className="space-y-6 text-center md:text-left order-2 md:order-1"
           >
             {/* Saludo inicial */}
             <motion.div
@@ -60,7 +60,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-primary-light dark:text-primary-dark leading-tight"
+              className="text-3xl sm:text-5xl lg:text-6xl font-display font-bold text-primary-light dark:text-primary-dark leading-tight"
             >
               {t("name")}
             </motion.h1>
@@ -90,7 +90,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-2xl text-justify"
+              className="text-base sm:text-lg text-secondary-light dark:text-secondary-dark leading-relaxed max-w-2xl text-left"
             >
               {t("description")}
             </motion.p>
@@ -100,7 +100,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.65 }}
-              className="grid grid-cols-3 gap-4 max-w-lg"
+              className="grid grid-cols-3 gap-3 sm:gap-4 max-w-lg mx-auto md:mx-0"
             >
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-accent-500 dark:text-accent-400">
@@ -133,7 +133,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex items-center space-x-2 text-secondary-light dark:text-secondary-dark"
+              className="flex items-center justify-center md:justify-start space-x-2 text-secondary-light dark:text-secondary-dark"
             >
               <MapPin className="w-5 h-5 text-accent-500" />
               <span>{tContact("location")}</span>
@@ -144,7 +144,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="flex flex-wrap items-center gap-4 pt-4"
+              className="flex flex-wrap items-center justify-center md:justify-start gap-3 sm:gap-4 pt-4"
             >
               {/* Botón de teléfono principal */}
               <a
@@ -173,7 +173,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9 }}
-              className="flex items-center space-x-4 pt-2"
+              className="flex items-center justify-center md:justify-start space-x-4 pt-2"
             >
               <a
                 href="https://github.com/Santiago1927"
@@ -210,7 +210,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="flex justify-center"
+            className="flex justify-center order-1 md:order-2"
           >
             <div className="relative">
               {/* Anillos decorativos animados */}
@@ -218,7 +218,7 @@ export default function Hero() {
               <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-accent-500 via-purple-500 to-pink-500 opacity-20 animate-glow"></div>
 
               {/* Avatar principal */}
-              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl shadow-accent-500/20">
+              <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl shadow-accent-500/20">
                 <Image
                   src="/profile.jpg"
                   alt="David Santiago Andrade Santacruz"

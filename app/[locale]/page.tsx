@@ -17,6 +17,7 @@ import Script from "next/script";
  * This data is important for search engine positioning
  */
 export const metadata: Metadata = {
+  metadataBase: new URL("https://davidandrade.dev"),
   title: "David Santiago Andrade - Full Stack Developer",
   description:
     "Professional portfolio of David Santiago Andrade Santacruz, Systems Engineer and Full Stack Developer specialized in React, Next.js, TypeScript, Firebase and MongoDB.",

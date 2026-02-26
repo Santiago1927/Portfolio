@@ -97,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" ref={ref} className="py-24 px-4">
+    <section id="contact" ref={ref} className="py-16 md:py-24 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -134,7 +134,7 @@ export default function Contact() {
           </div>
 
           {/* Grid de tarjetas de contacto */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12">
             {/* Tarjeta de Email */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -202,7 +202,7 @@ export default function Contact() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             onSubmit={handleSubmit}
-            className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-xl"
+            className="max-w-2xl mx-auto bg-white dark:bg-gray-800 rounded-2xl p-4 sm:p-8 border border-gray-200/50 dark:border-gray-700/50 shadow-xl"
           >
             {/* Mensaje de éxito */}
             {submitStatus === "success" && (

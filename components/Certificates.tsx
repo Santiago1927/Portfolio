@@ -33,7 +33,7 @@ function CertificateCard({
               src={cert.image}
               alt={title}
               fill
-              sizes="33vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500"
               onError={() => setImgError(true)}
             />
@@ -149,7 +149,17 @@ export default function Certificates() {
     return () => ro.disconnect();
   }, []);
 
-  const cardWidth = containerWidth > 0 ? (containerWidth - GAP * 2) / 3 : 0;
+  const visibleCards =
+    containerWidth > 0
+      ? containerWidth < 640
+        ? 1
+        : containerWidth < 1024
+          ? 2
+          : 3
+      : 3;
+  const totalGaps = GAP * (visibleCards - 1);
+  const cardWidth =
+    containerWidth > 0 ? (containerWidth - totalGaps) / visibleCards : 0;
   const step = cardWidth + GAP;
   const translateX = -displayIndex * step;
 
@@ -201,7 +211,7 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="py-20 bg-gradient-to-b from-background-light to-surface-light dark:from-background-dark dark:to-surface-dark"
+      className="py-14 md:py-20 bg-gradient-to-b from-background-light to-surface-light dark:from-background-dark dark:to-surface-dark"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Encabezado */}
@@ -224,14 +234,14 @@ export default function Certificates() {
           {/* Flecha izquierda */}
           <button
             onClick={goToPrev}
-            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 shadow-lg hover:bg-accent-500/10 dark:hover:bg-accent-400/10 hover:border-accent-500 dark:hover:border-accent-400 transition-all duration-200 hover:scale-110"
+            className="absolute left-0 sm:-left-5 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 shadow-lg hover:bg-accent-500/10 dark:hover:bg-accent-400/10 hover:border-accent-500 dark:hover:border-accent-400 transition-all duration-200 hover:scale-110"
             aria-label="Anterior"
           >
             <ChevronLeft className="w-5 h-5 text-primary-light dark:text-primary-dark" />
           </button>
 
           {/* Ventana visible — overflow hidden recorta el track */}
-          <div ref={containerRef} className="overflow-hidden mx-7">
+          <div ref={containerRef} className="overflow-hidden mx-10 sm:mx-7">
             {/* Track completo que se desplaza 1 carta a la vez */}
             <div
               className="flex"
@@ -272,7 +282,7 @@ export default function Certificates() {
           {/* Flecha derecha */}
           <button
             onClick={goToNext}
-            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 shadow-lg hover:bg-accent-500/10 dark:hover:bg-accent-400/10 hover:border-accent-500 dark:hover:border-accent-400 transition-all duration-200 hover:scale-110"
+            className="absolute right-0 sm:-right-5 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 shadow-lg hover:bg-accent-500/10 dark:hover:bg-accent-400/10 hover:border-accent-500 dark:hover:border-accent-400 transition-all duration-200 hover:scale-110"
             aria-label="Siguiente"
           >
             <ChevronRight className="w-5 h-5 text-primary-light dark:text-primary-dark" />

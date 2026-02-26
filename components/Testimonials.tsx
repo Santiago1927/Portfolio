@@ -51,7 +51,7 @@ export default function Testimonials() {
     <section
       id="testimonials"
       ref={ref}
-      className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
+      className="py-16 md:py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -60,7 +60,7 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
         >
           {/* Título de la sección */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-10 md:mb-16">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -88,7 +88,7 @@ export default function Testimonials() {
           </div>
 
           {/* Grid de testimonios */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
@@ -118,7 +118,7 @@ export default function Testimonials() {
                   </div>
 
                   {/* Texto del testimonio */}
-                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed italic text-justify">
+                  <p className="text-secondary-light dark:text-secondary-dark leading-relaxed italic text-left">
                     &ldquo;{testimonial.text}&rdquo;
                   </p>
 

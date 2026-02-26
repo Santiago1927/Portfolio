@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,17 +6,19 @@
 
 @layer base {
   :root {
-    --font-inter: 'Inter', system-ui, sans-serif;
-    --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+    --font-inter: "Inter", system-ui, sans-serif;
+    --font-space-grotesk: "Space Grotesk", system-ui, sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
     @apply antialiased;
+    overflow-x: hidden;
   }
 
   body {
     @apply font-sans;
+    overflow-x: hidden;
   }
 
   /* Enhanced selection colors */
@@ -77,3 +79,7 @@
   @apply transition-colors duration-200;
 }
 
+/* Scroll offset for fixed navbar */
+section[id] {
+  scroll-margin-top: 4rem;
+}

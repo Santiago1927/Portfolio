@@ -85,7 +85,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
+      className="py-16 md:py-24 px-4 bg-surface-light/30 dark:bg-surface-dark/30"
     >
       <div className="max-w-7xl mx-auto">
         <motion.div
@@ -94,7 +94,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           {/* Título de la sección */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8 md:mb-12">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -114,7 +114,7 @@ export default function About() {
           </div>
 
           {/* Grid con dos columnas */}
-          <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
             {/* Columna izquierda: Descripción */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -122,7 +122,7 @@ export default function About() {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="space-y-6"
             >
-              <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed text-justify">
+              <p className="text-lg text-secondary-light dark:text-secondary-dark leading-relaxed text-left">
                 {t("description")}
               </p>
             </motion.div>
