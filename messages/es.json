@@ -11,7 +11,7 @@
     "name": "David Santiago Andrade Santacruz",
     "title": "Ingeniero de Sistemas",
     "subtitle": "Desarrollador Full Stack",
-    "description": "Ingeniero de Sistemas con más de 3 años de experiencia como Desarrollador Full Stack en aplicaciones web y móviles multiplataforma, con énfasis en React. He trabajado con Dart, Firebase, Django, React, Next.js, TypeScript, Node.js y Python. Cuento con experiencia en desarrollo de sitios con React y consumo de APIs públicas, diseño y gestión de bases de datos SQL y NoSQL (Firebase, MongoDB), en entornos cloud y locales. He desarrollado proyectos de e-commerce (WooCommerce), sistema de gestión de reportes de procesos de una fábrica de lácteos, sistemas de gestión de propiedades con geolocalización, landing pages y reportes automatizados (PDF y Excel).",
+    "description": "Ingeniero de Sistemas con más de 3 años de experiencia como Desarrollador Full Stack en aplicaciones web y móviles multiplataforma, con énfasis en React. He trabajado con Dart, Firebase, Django, React, Next.js, TypeScript, Node.js y Python. Cuento con experiencia en desarrollo de sitios con React y consumo de APIs públicas, diseño y gestión de bases de datos SQL (MySQL, PostgreSQL) y NoSQL (Firebase, MongoDB), en entornos cloud y locales. He desarrollado proyectos de e-commerce, sistema de gestión de reportes de procesos de una fábrica de lácteos, sistemas de gestión de propiedades con geolocalización, landing pages y reportes automatizados (PDF y Excel).",
     "cv": "Descargar CV",
     "value1": "3+ años",
     "value1Label": "Experiencia",
@@ -22,7 +22,7 @@
   },
   "about": {
     "title": "Acerca de mí",
-    "description": "Desarrollador Full Stack con experiencia comprobada en la arquitectura y desarrollo de aplicaciones web modernas utilizando React y Next.js. Especializado en el diseño e implementación de bases de datos SQL y NoSQL (MySQL, Firebase, MongoDB) tanto en entornos cloud como on-premise. He liderado proyectos de e-commerce, sistemas de gestión inmobiliaria, landing pages corporativas y soluciones de automatización de reportes, siempre priorizando la experiencia de usuario, el rendimiento y las mejores prácticas de desarrollo.",
+    "description": "Desarrollador Full Stack con experiencia comprobada en la arquitectura y desarrollo de aplicaciones web modernas utilizando React y Next.js. Especializado en el diseño e implementación de bases de datos SQL(MySQL, PostgreSQL) y NoSQL (MySQL, Firebase, MongoDB) tanto en entornos cloud como on-premise. He liderado proyectos de e-commerce, sistemas de gestión inmobiliaria, landing pages corporativas y soluciones de automatización de reportes, siempre priorizando la experiencia de usuario, el rendimiento y las mejores prácticas de desarrollo.",
     "skills": "Stack Tecnológico"
   },
   "experience": {
